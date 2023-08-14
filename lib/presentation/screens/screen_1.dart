@@ -6,20 +6,23 @@ class Easyscreen1 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
+    final media = MediaQuery.of(context).size;
+
     return Scaffold(
       body: Container(
         color: const Color(0xFF213E70), // Color de fondo morado
-        child: const Center(
+        child:  Center(
           child: Column(
             children: [
-              SizedBox(height: 100),
-              _W1(),
-              SizedBox(height: 30),
-              _W2(),
-              SizedBox(height: 30),
-              _W3(),
-              SizedBox(height: 30),
-              _W4()
+              const SizedBox(height: 100),
+              _W1(height:media.height*0.15 ,width: media.width*0.9),
+              const SizedBox(height: 40),
+               _W2(height:media.height*0.15 ,width: media.width*0.9),
+              const SizedBox(height: 40),
+               _W3(height:media.height*0.15 ,width: media.width*0.9),
+              const SizedBox(height: 40),
+               _W4(height:media.height*0.15 ,width: media.width*0.9)
             ],
           ),
         ),
@@ -30,13 +33,19 @@ class Easyscreen1 extends StatelessWidget {
 
 
 class _W1 extends StatelessWidget {
-  const _W1();
+  final double width;
+  final double height;
+
+  const _W1({
+    required this.width, 
+    required this.height
+    });
 
   @override
   Widget build(BuildContext context) {
     return Container(
-        width: 300,
-        height: 110,
+        width: width,
+        height: height,
         decoration: BoxDecoration(
           color: const Color(0xFFFFB956),
           borderRadius: BorderRadius.circular(20),
@@ -59,13 +68,19 @@ class _W1 extends StatelessWidget {
 
 
 class _W2 extends StatelessWidget {
-  const _W2();
+  final double width;
+  final double height;
+
+  const _W2({
+    required this.width, 
+    required this.height
+    });
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 300,
-      height: 110,
+      width: width,
+      height: height,
       decoration: BoxDecoration(
         color: const Color(0xFFFFB956),
         borderRadius: BorderRadius.circular(20),
@@ -79,13 +94,18 @@ class _W2 extends StatelessWidget {
 }
 
 class _W3 extends StatelessWidget {
-  const _W3();
+  final double width;
+  final double height;
+  const _W3({
+    required this.width, 
+    required this.height
+    });
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 300,
-      height: 110,
+      width: width,
+      height: height,
       decoration: BoxDecoration(
         color: const Color(0xFF213E70),
         borderRadius: BorderRadius.circular(20),
@@ -115,13 +135,18 @@ class _W3 extends StatelessWidget {
 }
 
 class _W4 extends StatelessWidget {
-  const _W4();
+  final double width;
+  final double height;
+  const _W4({
+    required this.width, 
+    required this.height
+    });
 
   @override
   Widget build(BuildContext context) {
     return  Container(
-        width: 300,
-        height: 110,
+        width: width,
+        height: height,
         decoration: BoxDecoration(
           color: Colors.blueGrey[200],
           borderRadius: BorderRadius.circular(20),

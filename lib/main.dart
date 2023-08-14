@@ -14,7 +14,6 @@ class MainApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         useMaterial3: true,
-        colorSchemeSeed: Colors.purple
       ),
       home: const Easyscreen1(),
     );
