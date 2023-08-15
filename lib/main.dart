@@ -1,5 +1,6 @@
 import 'package:ejercicio1/presentation/screens/screen_1.dart';
 import 'package:ejercicio1/presentation/screens/screen_2.dart';
+import 'package:ejercicio1/presentation/screens/screen_3.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -16,7 +17,7 @@ class MainApp extends StatelessWidget {
       theme: ThemeData(
         useMaterial3: true,
       ),
-      home: const LoginScreen(),
+      home: const EcommerceDos(),
     );
   }
 }
